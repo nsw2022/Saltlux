@@ -1,0 +1,21 @@
+[] Brackets 예제:
+
+텍스트: "My favorite fruits are apple, banana, and cherry."
+정규표현식: [aeiou]
+매칭될 내용: 모든 모음(a, e, i, o, u)
+
+
+. Dot 예제:
+
+텍스트: "충렬왕, 충선왕, 충숙왕, 충혜왕, 충목왕, 충정왕"
+정규표현식: 충.왕
+매칭될 내용: '충렬왕', '충선왕', '충숙왕', '충혜왕', '충목왕', '충정왕' (여기서 '.'는 어떤 문자든지 올 수 있음)
+
+
+
+
+* Asterisk 예제:
+
+텍스트: "I saw a cat, a bat, and a rat."
+정규표현식: ca*t
+매칭될 내용: 'ct' (cat에서 a가 0번 반복), 'cat' (a가 1번 반복), 'caat' (만약 'caat'라는 단어가 있다면 a가 2번 반복)

@@ -1,0 +1,15 @@
++ Plus 예제:
+
+텍스트: "I need a catalog, a cattail, and a cuttlefish."
+정규표현식: ca+t
+매칭될 내용: 'cat' (catalog에서), 'caat' (cattail에서) - 'ct' (cuttlefish에서)는 매치되지 않음.
+{m, n} Braces 예제:
+
+텍스트: "The words are cat, caat, caaat, caaaat, caaaaat, and caaaaaat."
+정규표현식: ca{2,5}t
+매칭될 내용: 'caat', 'caaat', 'caaaat', 'caaaaat' - 'cat' 및 'caaaaaat'는 매치되지 않음.
+? Question Mark 예제:
+
+텍스트: "I saw a cat, a ct, and a caat."
+정규표현식: ca?t
+매칭될 내용: 'ct', 'cat' - 'caat'는 매치되지 않음.

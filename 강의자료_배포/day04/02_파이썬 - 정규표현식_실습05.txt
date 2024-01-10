@@ -1,0 +1,12 @@
+1. 긍정형 전방탐색 (?=…) 예제:
+텍스트 예제: "The URL is http://www.google.com and the server is located in the USA."
+정규표현식: .+?(?=:)
+매칭될 내용: 'http' - 여기서 http: 부분에 대해 매치가 이루어지지만, :은 결과로 반환되지 않음.
+2. 부정형 전방탐색 (?!…) 예제:
+텍스트 예제: "She is a developer. He is an artist. They are musicians."
+정규표현식: \b(?!artist\b)\b\w+
+매칭될 내용: 'developer', 'He', 'is', 'an', 'They', 'are', 'musicians' - 'artist'를 제외한 단어들이 매치됨.
+3. 탐욕 방지 문자 ? 예제:
+텍스트 예제: "The cat (a small domestic animal) is under the table (wooden furniture)."
+정규표현식: \(.*?\)
+매칭될 내용: '(a small domestic animal)', '(wooden furniture)' - 각 괄호 안의 내용을 최소한으로 매치함.

@@ -1,0 +1,15 @@
+| Bar 예제:
+
+텍스트: "I have a cat and my friend has a dog."
+정규표현식: cat|dog
+매칭될 내용: 'cat', 'dog'
+^ Circumflex, Carat 예제:
+
+텍스트: "Life is too short. My Life is wonderful."
+정규표현식: ^Life
+매칭될 내용: 첫 번째 문장의 'Life' - 'My Life'는 매치되지 않음.
+$ Dollar Sign 예제:
+
+텍스트: "Life is too short. Life is short and art is long."
+정규표현식: short$
+매칭될 내용: 첫 번째 문장의 'short' - 두 번째 문장의 'short'는 매치되지 않음.
